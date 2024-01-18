@@ -16,12 +16,25 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .header-menu {
-  display: flex;
+  text-align: center;
   gap: 120px;
   background-color: #4e7949;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.header-menu-item {
+  display: inline-block; /* Permite ajustar o alinhamento vertical */
+  margin-right: 20px; /* Ajuste conforme necessário */
+}
+.menu {
+  display: flex;
+  gap: 120px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -168,9 +181,21 @@
   align-items: center;
 }
 
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+}
+
 @media (max-width: 1200px) {
-  .header-menu {
-    gap: 60px;
+  .menu {
+    gap: 45px;
   }
 
   .header-menu a {
@@ -187,13 +212,7 @@
   }
 }
 
-@media (max-width: 800px) {
-  .header-menu {
-    padding-left: 15px;
-    padding-right: 15px;
-    gap: 40px;
-  }
-
+@media (max-width: 900px) {
   .recado {
     width: 350px;
   }
@@ -204,36 +223,41 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .header-menu {
-    display: none;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+  .nav-list {
+    flex-wrap: wrap;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease-out;
   }
 
-  .shows {
+  .nav-list.active {
+    max-height: 200px; /* Ajuste para a altura desejada */
+    transition: max-height 0.5s ease-in; /* Adicionei a transição também para a classe ativa */
+    padding-top: 25px;
+  }
+
+  .nav-list.active li {
+    opacity: 1; /* Ajuste para a opacidade desejada quando a classe active estiver presente */
+    transition: opacity 0.5s ease-in; /* Adicione a transição da opacidade para o estado ativo */
+  }
+
+  .nav-list li {
     display: block;
-    background-color: #4e7949;
-    width: 600px;
-    height: 50px;
+    margin-left: 0px;
+    padding: 0px 15px;
+    opacity: 0; /* Adicione um valor inicial para a opacidade */
+    transition: opacity 0.2s ease-out; /* Adicione a transição da opacidade */
   }
 
-  .shows::after {
-    position: relative;
+  .mobile-menu {
     display: block;
-    content: "Menu";
-    color: #fff;
-    left: 250px;
-    top: 10px;
-  }
-
-  .shows:hover {
-    position: absolute;
-    content: "";
-
-    .header-menu {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-items: center;
-    }
   }
 
   .ocasal-img {
