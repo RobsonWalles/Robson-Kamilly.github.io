@@ -10,88 +10,64 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Quattrocento&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500&family=Pinyon+Script&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header-bg">
-    <div class="header container">
-      <a href="./">
-        <img src="./img/RK.svg" alt="RK">
-      </a>
-    </div>
-    <nav aria-label="primaria">
-      <div class="header-menu ">
-        <div class=" header-menu-item">
-          <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class=" line2""></div>
-            <div class=" line3""></div>
-          </div>
-        </div>
-        <ul class=" menu nav-list ">
-          <li class=" font-1-gm"><a href="/">O CASAL</a></li>
-          <li class="font-1-gm"><a href="/">RECADOS</a></li>
-          <li class="font-1-gm"><a href="/">PROGRAMAÇÃO</a></li>
-          <li class="font-1-gm"><a href="/">PRESENTES</a></li>
-          <li class="font-1-gm"><a href="/">PRESENÇA</a></li>
+  <header class="header">
+    <img src="./img/Principal.jpg" alt="Robson e Kamilly">
+    <div class="header-intro">
+      <nav>
+        <ul class="menu  nav-list font-1-m cor-w">
+          <li class=" font-1-gm"><a href="">O CASAL</a></li>
+          <li class=" font-1-gm"><a href="">PROGRAMAÇÃO</a></li>
+          <li class=" font-1-gm"><a href="">PRESENTES</a></li>
         </ul>
+      </nav>
+      <div class="header-center">
+        <h1 class="font-1-g cor-w">ELA DISSE "SIM"!</h1>
+        <a class="font-1-m cor-w" href="./">Confirmar Presença</a>
       </div>
-    </nav>
-  </header>
-
-  <div class="introducao-bg">
-    <div class="introducao container">
-      <img src="./img/Principal.jpg" alt="Robson e Kamilly na praia">
     </div>
-  </div>
+  </header>
+  <menu>
+    <div class="subtitulo ">
+      <h1 class="font-2-g">Robson <span class="font-2-gg cor-p2">&</span>Kamilly</h1>
+      <p class="font-2-m">09/06/2024</p>
+    </div>
 
-  <main>
-    <div class="ocasal container">
+    <section class="ocasal container">
       <h2 class="font-1-g ">O CASAL</h2>
       <div class="ocasal-img">
         <img src="./img/Ellipse 1.png" alt="Robson e Kamilly foto 1">
-        <img src="./img/Ellipse 2.png" alt="Robson e Kamilly foto 2">
+        <img class="elipse" src="./img/Ellipse 2.png" alt="Robson e Kamilly foto 2">
       </div>
-      <p>Decidimos dar o próximo passo e oficializar nosso compromisso através do casamento! Estamos cuidadosamente planejando cada detalhe, infundindo cada escolha com carinho e significado, ansiosos para celebrar cada momento com nossos amigos e familiares queridos. Estamos prontos para embarcar nesta nova fase da vida com alegria e gratidão, e mal podemos esperar para compartilhar esse momento único com todos aqueles que amamos.</p>
-    </div>
+      <p class="font-3-g">Decidimos dar o próximo passo e oficializar nosso compromisso através do casamento! Estamos cuidadosamente planejando cada detalhe, infundindo cada escolha com carinho e significado, ansiosos para celebrar cada momento com nossos amigos e familiares queridos. Estamos prontos para embarcar nesta nova fase da vida com alegria e gratidão, e mal podemos esperar para compartilhar esse momento único com todos aqueles que amamos.</p>
+    </section>
 
-    <div class="recado-bg container">
-      <h2 class="font-1-g">Deixe o seu recado</h2>
-      <div class="recado">
-        <div class="mensagem">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome">
-          <label for="nome">E-mail</label>
-          <input type="text" id="email" name="email">
-          <label for="nome">Recado</label>
-          <textarea name="mensagem" id="recado" cols="31" rows="10"></textarea>
-          <a class="botao" href="./">Enviar</a>
+    <section class="programacao-bg cor-w container">
+      <div>
+        <div class="tempo cor-p11 ">
+          <p class="font-3-b">220 <span class="font-3-gg">dias</span></p>
+          <p class="font-3-b">02 <span class="font-3-gg">horas</span></p>
+          <p class="font-3-b">15 <span class="font-3-gg">minutos</span></p>
+        </div>
+        <div class="programacao">
+          <h2 class="font-1-g">PROGRAMAÇÃO</h2>
+          <div class="programacao-lista font-3-g ">
+            <img src="./img/pin_drop_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            <p><span class="font-3-gg">Casa Hum</span> R. Araxá, Qd 43 - Lt 02 - Cardoso, Aparecida de Goiânia</p>
+            <img src="./img/event_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            <p>09/06/2024</p>
+            <img src="./img/schedule_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            <p>15:30</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="programacao-bg">
-      <div class=" container programacao ">
-        <h2 class="font-1-g">PROGRAMAÇÃO</h2>
-        <div class="programacao-lista font-2-n ">
-          <img src="./img/pin_drop_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-          <p><span class="font-2-g">Casa Hum</span> R. Araxá, Qd 43 - Lt 02 - Cardoso, Aparecida de Goiânia</p>
-          <img src="./img/event_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-          <p>09/06/2024</p>
-          <img src="./img/schedule_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-          <p>15:30</p>
-        </div>
-      </div>
-    </div>
+  </menu>
 
-    <div class="maps container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.77361190821324!2d-49.30541956041243!3d-16.75786956566525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef760b3bd0a3b%3A0x6464a8ef2869c6b7!2sR.%20Arax%C3%A1%2C%2063-25%20-%20Cardoso%2C%20Aparecida%20de%20Goi%C3%A2nia%20-%20GO%2C%2074933-115!5e0!3m2!1sen!2sbr!4v1704750942883!5m2!1sen!2sbr" width="900" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-  </main>
-
-  <script src="./js/movile-navbar.js"></script>
 </body>
 
 </html>

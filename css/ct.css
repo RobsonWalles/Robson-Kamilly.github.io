@@ -1,27 +1,76 @@
-.font-1-g {
-  font: 600 2rem/1.5 "Poppins", sans-serif;
+:root {
+  --cor-w: #ffffff;
+  --cor-1: #000000;
+  --cor-p1: #69a163;
+  --cor-p11: #34692f;
+  --cor-p2: #bd960d;
 }
 
-.font-1-gm {
-  font: 600 1.5rem/1.5 "Poppins", sans-serif;
+.font-1-g {
+  text-transform: uppercase;
+  font: 500 2rem/1.5 "Lemonada", cursive;
+  letter-spacing: 10px;
 }
 
 .font-1-m {
-  font: 600 1.5rem/1.5 "Poppins", sans-serif;
+  font: 400 1.2rem/1.5 "Lemonada", cursive;
 }
 
-.font-2-n {
-  font: 400 1.3rem/1.5 "Roboto", sans-serif;
+.font-1-gm {
+  font: 400 2rem/1.5 "Lemonada", cursive;
+}
+
+.font-2-gg {
+  font: 400 7rem/1.5 "Pinyon Script", cursive;
 }
 
 .font-2-g {
-  font: 600 1.3rem/1.5 "Roboto", sans-serif;
+  font: 400 3.5rem/1 "Pinyon Script", cursive;
 }
 
-@media (max-width: 700px) {
-  .font-1-g,
-  .font-1-gm {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
+.font-2-m {
+  font: 400 1.5rem/1 "Pinyon Script", cursive;
+}
+
+.font-3-b {
+  font: 500 2.2rem/1.5 "Roboto", sans-serif;
+}
+
+.font-3-gg {
+  font: 400 2rem/1.5 "Roboto", sans-serif;
+}
+
+.font-3-g {
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+.font-3-m {
+  font: 300 1rem/1.5 "Roboto", sans-serif;
+}
+
+.cor-w {
+  color: var(--cor-w);
+}
+
+.cor-p1 {
+  color: var(--cor-p1);
+}
+
+.cor-p11 {
+  color: var(--cor-p11);
+}
+
+.cor-p2 {
+  color: var(--cor-p2);
+}
+
+@media (max-width: 1000px) {
+  .font-1-g {
+    font: 500 1.3rem/1.5 "Lemonada", cursive;
+    letter-spacing: 7px;
+  }
+
+  .font-1-m {
+    font: 400 1rem/1.5 "Lemonada", cursive;
   }
 }
