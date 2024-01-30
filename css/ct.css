@@ -84,11 +84,14 @@
 }
 
 @media (max-width: 500px) {
+  .font-1-m {
+    font-size: 0.7rem;
+  }
   .font-2-g {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .font-2-gg {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }

@@ -207,14 +207,18 @@ body {
 }
 
 @media (max-width: 500px) {
+  .menu li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .subtitulo h1 {
     margin-bottom: -20px;
   }
   .ocasal {
-    margin-top: 380px;
+    margin-top: 390px;
   }
 
   .header-center {
-    top: 33%;
+    top: 17%;
   }
 }
