@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header-bg">
     <img src="./img/Principal.jpg" alt="Robson e Kamilly">
     <div class="header-intro">
       <nav>
@@ -30,12 +30,11 @@
       </div>
     </div>
   </header>
+  <div class="subtitulo ">
+    <h1 class="font-2-g">Robson <span class="font-2-gg cor-p2">&</span>Kamilly</h1>
+    <p class="font-2-m">09/06/2024</p>
+  </div>
   <menu>
-    <div class="subtitulo ">
-      <h1 class="font-2-g">Robson <span class="font-2-gg cor-p2">&</span>Kamilly</h1>
-      <p class="font-2-m">09/06/2024</p>
-    </div>
-
     <section class="ocasal container">
       <h2 class="font-1-g ">O CASAL</h2>
       <div class="ocasal-img">
@@ -48,9 +47,22 @@
     <section class="programacao-bg cor-w container">
       <div>
         <div class="tempo cor-p11 ">
-          <p class="font-3-b">220 <span class="font-3-gg">dias</span></p>
-          <p class="font-3-b">02 <span class="font-3-gg">horas</span></p>
-          <p class="font-3-b">15 <span class="font-3-gg">minutos</span></p>
+          <div>
+            <p class="font-3-b" id="dia"></p>
+          </div>
+          <span class="font-1-g cor-1">:</span>
+          <div>
+            <p class="font-3-b" id="hora"></p>
+          </div>
+          <span class="font-1-g cor-1">:</span>
+          <div>
+            <p class="font-3-b" id="minuto"></p>
+          </div>
+          <span class="font-1-g cor-1">:</span>
+          <div>
+            <p class="font-3-b" id="segundo"></p>
+          </div>
+
         </div>
         <div class="programacao">
           <h2 class="font-1-g">PROGRAMAÇÃO</h2>
@@ -65,9 +77,8 @@
         </div>
       </div>
     </section>
-
   </menu>
-
+  <script src="./js/movile-navbar.js"></script>
 </body>
 
 </html>

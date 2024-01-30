@@ -2,12 +2,12 @@ body {
   padding-bottom: 120px;
 }
 
-.header {
+.header-bg {
   position: relative;
   text-align: center;
 }
 
-.header img {
+.header-bg img {
   width: 100%;
   height: auto;
 }
@@ -26,7 +26,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -90%);
   text-align: center;
   gap: 50px;
 }
@@ -108,11 +108,12 @@ body {
   gap: 30px;
 }
 
-.tempo p {
+.tempo div {
   background-color: #b6e3b2;
   padding: 20px 40px;
   border-radius: 10px;
 }
+
 .tempo p span {
   display: block;
 }
@@ -152,6 +153,32 @@ body {
 }
 
 @media (max-width: 700px) {
+  .header-bg {
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* Muda para empilhamento em coluna */
+    text-align: center; /* Centraliza o conteúdo quando em coluna */
+    margin-top: 180px;
+  }
+
+  .subtitulo {
+    position: relative;
+    order: -1; /* Move a div .subtitulo para cima da imagem */
+    margin-top: 20px; /* Adiciona um espaçamento entre a imagem e a .subtitulo */
+  }
+
+  .ocasal {
+    margin-top: 390px;
+  }
+
+  .header-center h1 {
+    display: none;
+  }
+
+  .tempo span {
+    display: none;
+  }
+
   .menu a:after {
     background: var(--cor-w);
     height: 2px;
@@ -180,6 +207,13 @@ body {
 }
 
 @media (max-width: 500px) {
+  .subtitulo h1 {
+    margin-bottom: -20px;
+  }
+  .ocasal {
+    margin-top: 380px;
+  }
+
   .header-center {
     top: 33%;
   }
