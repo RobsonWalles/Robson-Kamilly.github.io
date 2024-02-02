@@ -207,6 +207,17 @@ body {
 }
 
 @media (max-width: 500px) {
+  .ocasal {
+    padding-top: 50px;
+  }
+
+  .elipse {
+    display: none;
+  }
+
+  .ocasal-img {
+    grid-template-columns: 1fr;
+  }
   .menu li {
     padding-top: 10px;
     padding-bottom: 10px;
