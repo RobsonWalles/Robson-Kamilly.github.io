@@ -106,7 +106,7 @@ input {
 
 @media (max-width: 500px) {
   .botao {
-    padding: 6px 12px;
+    padding: 12px 20px;
     border-radius: 4px;
     max-width: max-content;
   }

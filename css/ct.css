@@ -4,20 +4,21 @@
   --cor-p1: #69a163;
   --cor-p11: #34692f;
   --cor-p2: #bd960d;
+  --cor-p2-2: #f4db83;
 }
 
 .font-1-g {
   text-transform: uppercase;
-  font: 500 4rem/1.5 "Lemonada", cursive;
+  font: 500 2.5rem/1.5 "Lemonada", cursive;
   letter-spacing: 10px;
 }
 
 .font-1-m {
-  font: 400 1.2rem/1.5 "Lemonada", cursive;
+  font: 400 1rem/1.5 "Lemonada", cursive;
 }
 
 .font-1-gm {
-  font: 400 2rem/1.5 "Lemonada", cursive;
+  font: 400 1.5rem/1.5 "Lemonada", cursive;
 }
 
 .font-2-gg {
@@ -68,6 +69,10 @@
   color: var(--cor-p2);
 }
 
+.cor-p2-2 {
+  color: var(--cor-p2-2);
+}
+
 @media (max-width: 1200px) {
   .font-1-g {
     font: 500 2rem/1.5 "Lemonada", cursive;
@@ -92,7 +97,7 @@
     font-size: 1.4rem;
   }
   .font-1-m {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .font-2-g {
     font-size: 2.5rem;
