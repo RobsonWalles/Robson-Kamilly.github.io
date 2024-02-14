@@ -33,9 +33,15 @@
 
 .header-center a {
   padding: 15px 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   background: var(--cor-p1);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header-center a:hover {
+  background: var(--cor-p11);
+  transition: 600ms;
+  font-size: 1.2rem;
 }
 
 .menu li {
@@ -129,11 +135,17 @@
 }
 
 .programacao-lista {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-column-gap: 10px;
+  display: flex;
+  flex-direction: column;
   gap: 15px;
-  align-items: center;
+}
+
+.programacao-lista .programacao-lista-mapa:hover {
+  background-color: var(--cor-p11);
+  transition: 1000ms;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .programacao-lista img {
@@ -160,7 +172,7 @@
   margin-bottom: 60px;
 }
 
-.lista-presente p:last-child {
+.lista-presente a:last-child {
   margin-top: 60px;
 }
 
@@ -181,6 +193,13 @@
 
 .lista-presente .botao {
   background: linear-gradient(var(--cor-p2), var(--cor-p2-2));
+}
+
+.lista-presente .botao:hover {
+  transition: 600ms;
+  font-size: 1.4rem;
+  padding-bottom: 18px;
+  margin-bottom: -8px;
 }
 
 .footer-bg {
@@ -220,6 +239,12 @@
 .informacoes a {
   padding-bottom: 5px;
   padding-left: 15px;
+}
+
+.informacoes a:hover {
+  transition: 600ms;
+  font-size: 1.3rem;
+  padding-bottom: 5px;
 }
 
 .direitos {
