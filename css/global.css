@@ -112,12 +112,24 @@
 
 .tempo div {
   background-color: #b6e3b2;
-  padding: 20px 40px;
   border-radius: 10px;
+  width: 100px; /* Defina a largura como automática */
+  height: 100px; /* Mantenha a altura definida */
+  min-width: 100px; /* Defina um tamanho mínimo para o ícone */
+  display: flex;
+  justify-content: center;
+}
+.tempo div p {
+  display: flex;
+  align-self: center;
 }
 
 .tempo p span {
   display: block;
+}
+
+.tempo span {
+  color: var(--cor-w);
 }
 
 .programacao {
