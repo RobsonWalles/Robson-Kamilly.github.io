@@ -169,11 +169,13 @@
   text-align: left;
 }
 
-.programacao-lista-mapa img {
+.programacao-lista-mapa img,
+.programacao-lista-outros img {
   width: auto; /* Defina a largura como automática */
   height: 60px; /* Mantenha a altura definida */
   min-width: 60px; /* Defina um tamanho mínimo para o ícone */
 }
+
 .lista-presente {
   padding-top: 120px;
   display: flex;
@@ -325,7 +327,7 @@
   }
 
   .ocasal {
-    margin-top: 450px;
+    margin-top: 500px;
   }
 
   .header-center h1 {
@@ -366,12 +368,11 @@
 
 @media (max-width: 500px) {
   .lista-presente p:first-of-type::after {
-    top: -23px;
+    top: -53px;
   }
 
   .ocasal {
-    padding-top: 50px;
-    margin-top: 0px;
+    padding-top: 120px;
   }
 
   .elipse {
@@ -388,6 +389,10 @@
   .subtitulo h1 {
     margin-bottom: -20px;
   }
+  .subtitulo p {
+    padding-top: 50px;
+  }
+
   .ocasal {
     margin-top: 390px;
   }
@@ -420,8 +425,4 @@
     top: -35px;
     left: 50%;
   }
-}
-.programacao-lista-mapa img {
-  width: auto; /* Defina a largura como automática */
-  height: 60px; /* Mantenha a altura definida */
 }

@@ -8,7 +8,7 @@
 
 .lista {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: 60px;
 }
 
@@ -65,4 +65,74 @@
 }
 .menu-presentes a:hover:after {
   width: 100%;
+}
+.submenu {
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center; /* Centralize o texto horizontalmente */
+  background-color: var(--cor-p1); /* Adicione o mesmo background dos links */
+}
+
+.submenu a {
+  position: relative;
+  display: inline-block; /* Para que os links ocupem apenas o espaço necessário */
+  padding: 10px 60px;
+  margin: 5px; /* Adicione margem para espaçamento entre os links */
+}
+
+.submenu a .icon {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  position: absolute; /* Posicione a imagem absolutamente em relação ao link */
+  left: 10px; /* Ajuste a posição horizontal da imagem conforme necessário */
+  top: 50%; /* Centralize verticalmente a imagem */
+  transform: translateY(-50%); /* Centralize verticalmente a imagem */
+}
+.submenu-content {
+  background-color: var(--cor-w);
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0; /* Inicialmente, o conteúdo estará oculto */
+  transition: opacity 0.3s ease; /* Adiciona uma transição suave para a mudança de opacidade */
+}
+
+.submenu-content.show {
+  opacity: 1; /* Altera a opacidade para 1 quando o submenu estiver visível */
+}
+@media (max-width: 800px) {
+  .lista-presente2 {
+    margin-top: 500px;
+  }
+}
+
+.menu3 {
+  background-color: #333;
+  padding: 10px;
+}
+
+.menu3 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu3 ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu3 ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.submenu-content {
+  display: none;
+}
+
+.submenu-content.show {
+  display: block;
 }
