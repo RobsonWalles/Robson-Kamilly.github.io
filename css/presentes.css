@@ -78,7 +78,7 @@
   position: relative;
   display: inline-block; /* Para que os links ocupem apenas o espaço necessário */
   padding: 10px 60px;
-  margin: 5px; /* Adicione margem para espaçamento entre os links */
+  margin: 10px 150px; /* Adicione margem para espaçamento entre os links */
 }
 
 .submenu a .icon {
@@ -94,45 +94,24 @@
   background-color: var(--cor-w);
   padding: 10px;
   text-align: center;
-  overflow: hidden;
-  opacity: 0; /* Inicialmente, o conteúdo estará oculto */
-  transition: opacity 0.3s ease; /* Adiciona uma transição suave para a mudança de opacidade */
-}
-
-.submenu-content.show {
-  opacity: 1; /* Altera a opacidade para 1 quando o submenu estiver visível */
-}
-@media (max-width: 800px) {
-  .lista-presente2 {
-    margin-top: 500px;
-  }
-}
-
-.menu3 {
-  background-color: #333;
-  padding: 10px;
-}
-
-.menu3 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu3 ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.menu3 ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.submenu-content {
   display: none;
 }
 
 .submenu-content.show {
   display: block;
+}
+@media (max-width: 800px) {
+  .lista-presente2 {
+    margin-top: 500px;
+  }
+
+  .submenu a {
+    margin: 10px 100px; /* Adicione margem para espaçamento entre os links */
+  }
+}
+
+@media (max-width: 450px) {
+  .submenu a {
+    margin: 10px 70px; /* Adicione margem para espaçamento entre os links */
+  }
 }
