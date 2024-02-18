@@ -30,7 +30,7 @@ function enviarMensagemWhatsApp() {
       nome +
       ". Gostaria de confirmar se estarei presente no casamento do Robson e Kamilly dia 09/06/2024.";
 
-    var numeroTelefone = "5564999790868";
+    var numeroTelefone = "5562981783253";
     var url =
       "https://api.whatsapp.com/send?phone=" +
       numeroTelefone +
