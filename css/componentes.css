@@ -82,7 +82,7 @@ input {
 .botao {
   padding: 16px 32px;
   display: inline-block;
-  background: linear-gradient(#5b9057, #81b07d);
+  background: #5b9057;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;

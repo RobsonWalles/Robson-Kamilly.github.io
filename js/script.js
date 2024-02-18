@@ -21,3 +21,21 @@ function closePopup() {
   var popup = document.getElementById("popup");
   popup.style.display = "none";
 }
+
+function enviarMensagemWhatsApp() {
+  var nome = prompt("Digite seu nome:");
+  if (nome !== null && nome !== "") {
+    var mensagem =
+      "Olá aqui é " +
+      nome +
+      ". Gostaria de confirmar se estarei presente no casamento do Robson e Kamilly dia 09/06/2024.";
+
+    var numeroTelefone = "5564999790868";
+    var url =
+      "https://api.whatsapp.com/send?phone=" +
+      numeroTelefone +
+      "&text=" +
+      encodeURIComponent(mensagem);
+    window.open(url);
+  }
+}

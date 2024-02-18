@@ -161,4 +161,14 @@
   .submenu a {
     margin: 10px 70px; /* Adicione margem para espaçamento entre os links */
   }
+
+  .pix {
+    margin-top: 460px;
+    margin-bottom: -460px;
+  }
+
+  .popup img {
+    width: 250px;
+    height: 250px;
+  }
 }
