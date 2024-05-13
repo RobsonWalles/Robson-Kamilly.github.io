@@ -12,7 +12,8 @@
   margin-top: 60px;
 }
 
-.lista-presente2 {
+.lista-presente2,
+.lista-presente2-cha {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -146,7 +147,7 @@
   .pix {
     margin-left: 0px;
     margin-top: 580px;
-    margin-bottom: -500px;
+    margin-bottom: -5000px;
   }
 }
 
