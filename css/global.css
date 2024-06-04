@@ -152,6 +152,11 @@
   flex-direction: column;
   gap: 15px;
 }
+
+.programacao-lista-mapa a {
+  z-index: 1;
+}
+
 .programacao-lista-mapa img {
   height: 24px; /* Mantenha apenas a altura definida */
 }
